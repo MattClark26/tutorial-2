@@ -1,4 +1,4 @@
-# **Financial Dashboard"" 
+# Financial Dashboard 
 
 | Name | Student Number |
 | ---- | -------------- |
