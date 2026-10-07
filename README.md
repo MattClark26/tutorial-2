@@ -1,8 +1,18 @@
-# Panel 2: Labour Market Signal
+# **Financial Dashboard"" 
+
+| Name | Student Number |
+| ---- | -------------- |
+| Matthias Clark | 25370033|
+| ---| --------|
+|     |       |
+|---|----------|
+|    |           |
+
+## Panel 2: Labour Market Signal
 
 A Python dashboard that tracks US labor market trends, recession indicators, and data revision patterns using FRED data.
 
-## Overview
+### Overview
 
 * **Sahm Rule:** Calculates the 3-month moving average of unemployment minus its 12-month minimum. Flags when it hits the 0.50 percentage point threshold and compares it against FRED's `SAHMREALTIME`series.
 * **Jobless Claims:** Plots the 4-week moving average of initial claims and flags sharp jumps off 52-week lows.
