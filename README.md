@@ -40,6 +40,29 @@ Panel 4 – The Irish Lens – [Student 4]
 Uses the CSO PxStat API to compare Irish GDP with Modified Domestic Demand, and explains why multinational
 activity makes headline GDP misleading. Applies the Sahm rule function from Panel 2 to Irish unemployment,
 shows the US share of Irish goods exports, and overlays the Panel 1 US recession probability on Irish data.
+
+## Repository structure
+
+The dashboard will have one Streamlit entry point and one Python module per panel. This lets each of us work on our own panel while keeping the date slider, layout and Recession Thermometer in one place.
+
+| Path | What goes there |
+| --- | --- |
+| `app.py` | Streamlit entry point, dashboard layout, time-machine slider and Recession Thermometer |
+| `panels/bond_market.py` | Panel 1 · Yield curves and US recession probability |
+| `panels/labour_market.py` | Panel 2 · Sahm rule, jobless claims and payrolls |
+| `panels/financial_stress.py` | Panel 3 · Credit spreads, VIX, the Fed stress index and S&P 500 drawdowns |
+| `panels/irish_lens.py` | Panel 4 · Irish economic indicators and exposure to a US downturn |
+| `data/` | Cached CSVs for when an API is unavailable |
+| `requirements.txt` | Python dependencies for running and deploying the dashboard |
+
+### Working on a panel
+
+1. Once the scaffold is on `main`, pull the latest changes and create a branch for your panel, for example `panel-3-financial-stress`.
+2. Build and test your panel in its own module. Coordinate any changes to `app.py` or shared dependencies with the group.
+3. Open a pull request into `main` and include a short note on what changed and how you tested it.
+
+Before building the panels, agree on the score scale and how each module will receive the selected date and return a score, a green/amber/red status and a one-sentence verdict. Keep the recession probability and Sahm rule calculations callable so the Irish Lens can reuse them.
+
 Data Sources
 
 FRED and ALFRED (Federal Reserve Bank of St. Louis), Yahoo Finance via yfinance, and the Central
