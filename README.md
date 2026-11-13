@@ -36,7 +36,7 @@ Panel 3 – The Financial Stress Signal – [Rohi Aluede]
 Tracks corporate credit spreads, the VIX, the St. Louis Fed Financial Stress Index and S&P 500 drawdowns from
 peak. Each series is converted to a z-score so they can be compared on one chart. The panel then tests whether
 market stress spikes have preceded recessions or were false alarms.
-Panel 4 – The Irish Lens – [Student 4]
+Panel 4 – The Irish Lens – [Matthias Clark]
 Uses the CSO PxStat API to compare Irish GDP with Modified Domestic Demand, and explains why multinational
 activity makes headline GDP misleading. Applies the Sahm rule function from Panel 2 to Irish unemployment,
 shows the US share of Irish goods exports, and overlays the Panel 1 US recession probability on Irish data.
